@@ -68,9 +68,11 @@ or
 https://angeltravieso.github.io/helm-charts/nginx-0.1.0.tgz => this download the chart
 
 ## Install chart
+
 helm repo add AngelTravieso <link github page>
 
 example:
+
 ```
     helm repo add AngelTravieso https://angeltravieso.github.io/helm-charts/
 ```
@@ -88,6 +90,7 @@ Search for the Nginx chart
 ```
 
 Install customize nginx chart
+
 ```
     helm install super-nginx AngelTravieso/nginx
 ```
@@ -96,4 +99,13 @@ Verify install of the Chart
 
 ```
     helm list
+```
+
+### Helm CLI for creating new charts
+
+helm create <chart-name>
+example:
+
+```
+    helm create backend-app
 ```
