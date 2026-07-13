@@ -57,3 +57,12 @@ helm install local-nginx <tgx>
 
 example:
 helm install local-nginx nginx-0.1.0.tgz
+
+helm repo index .
+
+## Download chart
+
+in the page (github page)
+https://angeltravieso.github.io/helm-charts/index.yaml => this show the index.yaml of Chart
+or
+https://angeltravieso.github.io/helm-charts/nginx-0.1.0.tgz => this download the chart
