@@ -66,3 +66,34 @@ in the page (github page)
 https://angeltravieso.github.io/helm-charts/index.yaml => this show the index.yaml of Chart
 or
 https://angeltravieso.github.io/helm-charts/nginx-0.1.0.tgz => this download the chart
+
+## Install chart
+helm repo add AngelTravieso <link github page>
+
+example:
+```
+    helm repo add AngelTravieso https://angeltravieso.github.io/helm-charts/
+```
+
+Verify install of the repo
+
+```
+    helm repo list
+```
+
+Search for the Nginx chart
+
+```
+    helm search repo nginx
+```
+
+Install customize nginx chart
+```
+    helm install super-nginx AngelTravieso/nginx
+```
+
+Verify install of the Chart
+
+```
+    helm list
+```
